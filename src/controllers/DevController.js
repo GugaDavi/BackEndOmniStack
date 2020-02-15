@@ -10,6 +10,7 @@ module.exports = {
     const devs = await Dev.find();
     const formattedDevs = devs.map(dev => {
       return {
+        name: dev.name,
         _id: dev._id,
         bio: dev.bio,
         github_username: dev.github_username,
